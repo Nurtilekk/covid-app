@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import Logo from "../../assets/Logo.svg";
 import { Button } from '../components';
 
-export const Header = () => {
+export const Header = ({openModal}) => {
 
   window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
@@ -12,7 +12,7 @@ export const Header = () => {
   })
 
   return (
-    <header class={style.header}>
+    <header className={style.header}>
       <div className="container">
         <nav className={style.nav}>
           <NavLink to="/" className={style.logo}>
@@ -40,7 +40,7 @@ export const Header = () => {
                 Treatment
               </NavLink>
             </li>
-            <Button outline={true}>Contact</Button>
+            <Button openModal={openModal} outline={true}>Contact</Button>
           </ul>
         </nav>
       </div>

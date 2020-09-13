@@ -2,3 +2,7 @@
   --primary: #FB4C47;
   --secondary: #035755;
 }
+
+body.modal-is-open {
+  overflow: hidden;
+}
