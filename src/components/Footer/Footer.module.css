@@ -77,3 +77,7 @@
         width: 40%;
     }
 }
+
+.menu_item a.active {
+    color: var(--primary);
+}
