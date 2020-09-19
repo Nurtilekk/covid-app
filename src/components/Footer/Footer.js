@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './Footer.module.css'
-import {NavLink} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import Logo from '../../assets/Logo.svg'
 
 
@@ -20,6 +20,11 @@ export const Footer = () => {
                             </NavLink>
                         </li>
                         <li className={styles.menu_item}>
+                            <NavLink exact to="/about" activeClassName={styles.active}>
+                                About
+                            </NavLink>
+                        </li>
+                        <li className={styles.menu_item}>
                             <NavLink exact to="/symptoms" activeClassName={styles.active}>
                                 Symptoms
                             </NavLink>
@@ -36,10 +41,10 @@ export const Footer = () => {
                         </li>
                     </ul>
                     <ul className={styles.footerSocial}>
-                        <li><a href="#"><i className="fa fa-facebook" aria-hidden="true" style={{color: '#365899'}}></i></a></li>
-                        <li><a href="#"><i className="fa fa-youtube-play" style={{color: 'red'}}></i></a></li>
-                        <li><a href="#"><i className="fa fa-whatsapp" aria-hidden="true" style={{color: '#25D366'}}></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter" aria-hidden="true" style={{color: 'rgb(26, 145, 218)'}}></i></a></li>
+                        <li><Link to="#"><i className="fa fa-facebook" aria-hidden="true" style={{color: '#365899'}}></i></Link></li>
+                        <li><Link to="#"><i className="fa fa-youtube-play" style={{color: 'red'}}></i></Link></li>
+                        <li><Link to="#"><i className="fa fa-whatsapp" aria-hidden="true" style={{color: '#25D366'}}></i></Link></li>
+                        <li><Link to="#"><i className="fa fa-twitter" aria-hidden="true" style={{color: 'rgb(26, 145, 218)'}}></i></Link></li>
                     </ul>
                 </div>
                 <div className="footer-bottom">

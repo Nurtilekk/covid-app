@@ -12,7 +12,7 @@ export const Header = () => {
   })
 
   return (
-    <header class={style.header}>
+    <header className={style.header}>
       <div className="container">
         <nav className={style.nav}>
           <NavLink to="/" className={style.logo}>
@@ -23,6 +23,11 @@ export const Header = () => {
             <li className={style.menu_item}>
               <NavLink activeClassName={style.active} exact to="/">
                 Overview
+              </NavLink>
+            </li>
+            <li className={style.menu_item}>
+              <NavLink activeClassName={style.active} exact to="/about">
+                About
               </NavLink>
             </li>
             <li className={style.menu_item}>
