@@ -8,9 +8,7 @@ function App() {
   return (
     <main>
       <Header />
-      <div style={{height: '100vh'}}>
           <About/>
-      </div>
     <Footer/>
     </main> 
   );
